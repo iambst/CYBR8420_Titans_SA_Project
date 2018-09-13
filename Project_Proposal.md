@@ -1,6 +1,5 @@
----
 # CYBR8420 Project Proposal
----
+
 # Team Name 
 ```
 Titans
