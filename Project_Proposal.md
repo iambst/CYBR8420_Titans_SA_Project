@@ -27,8 +27,6 @@ Branches:115 branches
 Total releases : 431 releases
 Contributors: 551
 ```
-
-
 # Programming Languages usage breakdown:
 
   - PHP : 57%
@@ -48,7 +46,7 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
 # Features!
 ---
 
-  - Nextcloud users can manage calendars (CalDAV), contacts (CardDAV), scheduled tasks and streaming media (Ampache) from within the platform.
+  - Nextcloud users can manage calendars, contacts, scheduled tasks and streaming media  from within the platform.
   - Content can be shared by defining granular read/write permissions between users and/or groups.
   - Nextcloud users can create public URLs when sharing files. Logging of file-related actions, as well as disallowing access based on file access rules is also available.
   - Users can interact with the browser-based text editor, bookmarking service, URL shortening suite, gallery, RSS feed reader and document viewer tools from within Nextcloud.
@@ -60,13 +58,20 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
   - Restrict the access of data by administrators.
   - Proper Encryption algorithms to encrypt the user data in case of unauthorized access.
   - Proper security measures to monitor backup and restore systems.
+  
+ # Security Features
+ ---
+  - The system uses PGP key to ensure confidential submission and authentication.
+  - Next cloud server uses bcrypt algorithm for security and performance thus avoiding Denial-of-service attacks.
+  - Nextcloud uses a RFC 4086  compliant mixer to generate cryptographically secure pseudo-random numbers.
+  - The project sites (website, repository, and download URLs) support HTTPS using TLS.
+  - The security mechanisms within the software produced by the project implements perfect forward secrecy for key agreement protocols   so a session key derived from a set of long-term keys cannot be compromised if one of the long-term keys is compromised in the future.
 
 # Security related history
 
  **A missing sanitization of search results for an autocomplete field could lead to a stored XSS requiring user-interaction**
         
         This missing sanitization only affected group names, hence malicious search results could only be crafted by privileged users like admins or group admins.
-
 
 **Improper checks of dropped permissions**
 
@@ -78,11 +83,9 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
 
 **Breach of Privacy**
     
-    
     Nextcloud Server before 10.0.4 and 11.0.2 are vulnerable to disclosure of calendar and address book names to other logged-in users. Note that no actual content of the calendar and address book has been disclosed.
     
 **XSS vulnerabilities**
-    
     
     Nextcloud Server before 9.0.58 and 10.0.5 and 11.0.3 are vulnerable to an inadequate escaping of error messages leading to XSS vulnerabilities in multiple components.
 
