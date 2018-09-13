@@ -9,9 +9,9 @@ Titans
 Charitha Karnam (ckarnam@unomaha.edu), Lakshmi Prasanna Kaspa(lkaspa@unomaha.edu), Sai Tarun Battula(sbattula@unomaha.edu)
 
 # Project: 
----
+
 Nextcloud Server 
----
+
 
 Github Link: [Nextcloudserver](https://github.com/nextcloud/server)
 
@@ -32,18 +32,18 @@ Contributors: 551
   - JavaScript : 40%
   - CSS : 1%
   - Others : 2%
----
+
 # Motivation:
 
 Our selection of the project was based on the common skill set our group members shared (JAVASCRIPT, PHP). Since Nextcloud is about hosting and maintaining user data, security is a major concern in this application. Hence, it would provide us a good platform in learning about software security vulnerabilities.
 
 # Description:
----
+
 Nextcloud is a suite of client-server software for creating and using file hosting services. It is functionally similar to Dropbox, although Nextcloud is free and open-source, allowing anyone to install and operate it on a private server.
 In contrast to proprietary services like Dropbox, the open architecture allows adding functionality to the server in the form of applications and enables users to have full control of their data.
   
 # Features!
----
+
 
   - Nextcloud users can manage calendars, contacts, scheduled tasks and streaming media  from within the platform.
   - Content can be shared by defining granular read/write permissions between users and/or groups.
@@ -51,7 +51,7 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
   - Users can interact with the browser-based text editor, bookmarking service, URL shortening suite, gallery, RSS feed reader and document viewer tools from within Nextcloud.
 
 # Some security needs
----
+
   - Secured and confidential submission of client files.
   - Secure the server from Man-in-the-middle attacks.
   - Restrict the access of data by administrators.
@@ -59,7 +59,7 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
   - Proper security measures to monitor backup and restore systems.
   
  # Security Features
- ---
+
   - The system uses PGP key to ensure confidential submission and authentication.
   - Next cloud server uses bcrypt algorithm for security and performance thus avoiding Denial-of-service attacks.
   - Nextcloud uses a RFC 4086  compliant mixer to generate cryptographically secure pseudo-random numbers.
