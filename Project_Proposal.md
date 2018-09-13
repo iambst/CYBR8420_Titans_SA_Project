@@ -7,7 +7,7 @@ Titans
 ```
 # Team Members 
 
-Charitha Karnam ckarnam@unomaha.edu_), Lakshmi Prasanna Kaspa(_lkaspa@unomaha.edu_), Sai Tarun Battula(sbattula@unomaha.edu)
+Charitha Karnam (ckarnam@unomaha.edu), Lakshmi Prasanna Kaspa(lkaspa@unomaha.edu), Sai Tarun Battula(sbattula@unomaha.edu)
 
 # Project: 
 ---
