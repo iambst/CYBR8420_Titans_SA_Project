@@ -16,6 +16,10 @@ Nextcloud Server
 
 Github Link: [Nextcloudserver](https://github.com/nextcloud/server)
 
+# License
+
+All contributions to NextCloud repository from June, 16 2016 on are considered to be licensed under the AGPLv3 or any later version.
+
 # Repository Activity
 ```
 Total Commits:45,558 commits
@@ -23,6 +27,7 @@ Branches:115 branches
 Total releases : 431 releases
 Contributors: 551
 ```
+
 
 # Programming Languages usage breakdown:
 
@@ -80,5 +85,6 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
     
     
     Nextcloud Server before 9.0.58 and 10.0.5 and 11.0.3 are vulnerable to an inadequate escaping of error messages leading to XSS vulnerabilities in multiple components.
+
 
 
