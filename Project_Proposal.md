@@ -15,7 +15,7 @@ Nextcloud Server
 
 Github Link: [Nextcloudserver](https://github.com/nextcloud/server)
 
-# License
+# License Information
 
 All contributions to NextCloud repository from June, 16 2016 on are considered to be licensed under the AGPLv3 or any later version.
 
@@ -35,12 +35,11 @@ Contributors: 551
 
 # Motivation:
 
-Our selection of the project was based on the common skill set our group members shared (JAVASCRIPT, PHP). Since Nextcloud is about hosting and maintaining user data, security is a major concern in this application. Hence, it would provide us a good platform in learning about software security vulnerabilities.
+Nextcloud server, is a secure all in one place where one can store their data and also specify access levels to other users. As the project itself deals with providing best possible security based services to users, it has caught our interest to pick this project. Another consensus by which we selected the project was due to the common programming expertise that we share together as a team. Nextcloud is mostly built with PHP and JavaScript..
 
 # Description:
 
-Nextcloud is a suite of client-server software for creating and using file hosting services. It is functionally similar to Dropbox, although Nextcloud is free and open-source, allowing anyone to install and operate it on a private server.
-In contrast to proprietary services like Dropbox, the open architecture allows adding functionality to the server in the form of applications and enables users to have full control of their data.
+Nextcloud is a suite of client-server software for creating and using file hosting services. It is functionally similar to Dropbox, although Nextcloud is free and open-source, allowing anyone to install and operate it on a private server. In contrast to proprietary services like Dropbox, the open architecture allows adding functionality to the server in the form of applications and enables users to have full control of their data.
   
 # Features!
 
@@ -50,19 +49,20 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
   - Nextcloud users can create public URLs when sharing files. Logging of file-related actions, as well as disallowing access based on file access rules is also available.
   - Users can interact with the browser-based text editor, bookmarking service, URL shortening suite, gallery, RSS feed reader and document viewer tools from within Nextcloud.
 
-# Some security needs
+# Some essential security needs
 
-  - Secured and confidential submission of client files.
-  - Secure the server from Man-in-the-middle attacks.
-  - Restrict the access of data by administrators.
-  - Proper Encryption algorithms to encrypt the user data in case of unauthorized access.
-  - Proper security measures to monitor backup and restore systems.
+  - Secure the storage of client files.
+  - Restrict the access of user's data to other users or groups.
+  - Provide encryption to the user data to provide confidentiality.
+  - Have counter measures to contain the damage caused by any malicoius programs.
+  - Ability to invalidate the session if device is stolen.
+  - Secure the server from different types of attacks like Man-in-the-middle, DDOS etc.
   
  # Security Features
 
   - The system uses PGP key to ensure confidential submission and authentication.
   - Next cloud server uses bcrypt algorithm for security and performance thus avoiding Denial-of-service attacks.
-  - Nextcloud uses a RFC 4086  compliant mixer to generate cryptographically secure pseudo-random numbers.
+  - Nextcloud uses a RFC 4086 compliant mixer to generate cryptographically secure pseudo-random numbers.
   - The project sites (website, repository, and download URLs) support HTTPS using TLS.
   - The security mechanisms within the software produced by the project implements perfect forward secrecy for key agreement protocols   so a session key derived from a set of long-term keys cannot be compromised if one of the long-term keys is compromised in the future.
 
