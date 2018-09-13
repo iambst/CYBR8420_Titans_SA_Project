@@ -22,8 +22,8 @@ All contributions to NextCloud repository from June, 16 2016 on are considered t
 
 # Repository Activity
 ```
-Total Commits:45,558 commits
-Branches:115 branches
+Total Commits: 45,558 commits
+Branches: 115 branches
 Total releases : 431 releases
 Contributors: 551
 ```
@@ -71,7 +71,7 @@ In contrast to proprietary services like Dropbox, the open architecture allows a
 
  **A missing sanitization of search results for an autocomplete field could lead to a stored XSS requiring user-interaction**
         
-        This missing sanitization only affected group names, hence malicious search results could only be crafted by privileged users like admins or group admins.
+      This missing sanitization only affected group names, hence malicious search results could only be crafted by privileged users like admins or group admins.
 
 **Improper checks of dropped permissions**
 
