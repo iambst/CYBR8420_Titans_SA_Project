@@ -47,7 +47,9 @@ Nextcloud is a suite of client-server software for creating and using file hosti
   
 # Users
 
-Nextcloud users are predimontly healthcare, education and financial service organizations. It provides easy and efficient file storage services. Organizations can share their data with multiple users by providing secured links to files. 
+Nextcloud users are predominantly healthcare, education and financial service organizations. It provides easy and efficient file storage services. Organizations can share their data with multiple users by providing secured links to files. Users can also upload their files to the cloud.
+
+We chose to focus on security needs of Financial Services Domain users.
 
 # Features!
   - Nextcloud users can manage calendars, contacts, scheduled tasks and streaming media  from within the platform.
