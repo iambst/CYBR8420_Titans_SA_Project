@@ -21,7 +21,7 @@ All contributions to NextCloud repository from June, 16 2016 on are considered t
 
 # Contribution
 
-Nextcloud doesn't require a CLA (Contributor License Agreement). To modify an existing file, the existing license header has to be placed as it is and a copyright notice needs to be added. A Developer Certificate of Origin (DCO) is used as an additional safeguard to sign the commits contributors make.
+Nextcloud doesn't require a CLA (Contributor License Agreement). To modify an existing file, the existing license header has to be placed as it is and a copyright notice needs to be added. A Developer Certificate of Origin (DCO) is used as an additional safeguard measure to sign the commits contributors make.
 
 # Repository Activity
 ```
@@ -37,19 +37,19 @@ Contributors: 551
   - CSS : 1%
   - Others : 2%
 
-# Motivation:
+# Motivation
 
-Nextcloud server, is a secure all in one place where one can store their data and also specify access levels to other users. As the project itself deals with providing best possible security based services to users, it has caught our interest to pick this project. Another consensus by which we selected the project was due to the common programming expertise that we share together as a team. Nextcloud is mostly built with PHP and JavaScript..
+Nextcloud server, is a secure all in one place data storage service where one can store their data and also specify access levels to other users. As the project itself deals with providing best possible security based services to users, it has caught our interest to pick this project. Another consensus by which we selected the project was due to the common programming expertise that we share together as a team. Nextcloud is mostly built with PHP and JavaScript..
 
-# Description:
+# Description
 
 Nextcloud is a suite of client-server software for creating and using file hosting services. It is functionally similar to Dropbox, although Nextcloud is free and open-source, allowing anyone to install and operate it on a private server. In contrast to proprietary services like Dropbox, the open architecture allows adding functionality to the server in the form of applications and enables users to have full control of their data.
   
 # Users
 
-Nextcloud users are predominantly healthcare, education and financial service organizations. It provides easy and efficient file storage services. Organizations can share their data with multiple users by providing secured links to files. Users can also upload their files to the cloud.
+Nextcloud users are predominantly financial service, education and healthcare organizations. It provides easy and efficient file storage services. Organizations can share their data with multiple users by providing secured links to files. Users can also upload their files to the cloud.
 
-We chose to focus on security needs of Financial Services Domain users.
+We chose to focus on security needs of Financial Service domain users.
 
 # Features!
   - Nextcloud users can manage calendars, contacts, scheduled tasks and streaming media  from within the platform.
