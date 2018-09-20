@@ -19,6 +19,10 @@ Github Link: [Nextcloudserver](https://github.com/nextcloud/server)
 
 All contributions to NextCloud repository from June, 16 2016 on are considered to be licensed under the AGPLv3 or any later version.
 
+# Contribution
+
+Nextcloud doesn't require a CLA (Contributor License Agreement). To modify an existing file, the existing license header has to be placed as it is and a copyright notice needs to be added. A Developer Certificate of Origin (DCO) is used as an additional safeguard to sign the commits contributors make.
+
 # Repository Activity
 ```
 Total Commits: 45,558 commits
