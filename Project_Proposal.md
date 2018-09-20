@@ -92,5 +92,9 @@ Nextcloud is a suite of client-server software for creating and using file hosti
     
     Nextcloud Server before 9.0.58 and 10.0.5 and 11.0.3 are vulnerable to an inadequate escaping of error messages leading to XSS vulnerabilities in multiple components.
 
+# Project Links
+
+Nextcloud Server - https://github.com/nextcloud/server
+Trello Project Board - https://trello.com/b/gPTAEzv4/sa-nextcloud
 
 
