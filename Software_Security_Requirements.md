@@ -46,4 +46,4 @@ Rogue Client wants to compromise data on the bank’s server. He can deliberatel
 
 ### UML Diagram
 
-
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%203.png)
