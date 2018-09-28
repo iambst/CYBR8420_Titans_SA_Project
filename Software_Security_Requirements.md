@@ -56,4 +56,11 @@ To prevent this, DDP tools can be used and background configuration checks must 
 
 ### 4. Send Customer Log Records
 
+## Alignment of security requirements with advertised features
+
+### Misuse case One:
+
+-Next cloud provides two-factor authentication.
+-Next cloud does not offer any progressive delays during login this may be vulnerable to a brute force attack by the hacker.
+-Next cloud offers a strong password policy by checking the password against the list of breached passwords from haveibeenpwnd.com. This check creates a hash of the password and sends the first five characters of this hash to the haveibeenpwnd.com API to retrieve a list of all hashes that start with them. Then it checks on the Nextcloud instance if the password hash is in the result set.
 
