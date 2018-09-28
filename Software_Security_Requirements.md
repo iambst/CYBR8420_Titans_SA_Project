@@ -55,13 +55,14 @@ Consider the scenario, where the bank teller requests client to provide proof of
 
 Rogue Client wants to compromise data on the bank’s server. He can deliberately request bank teller that he wants to share his documents through third party applications. When he gets the permission to share his external storage files, he can create deceptive identity by spoofing internet address. He can spoof internet address by faking the header information on Internet packets to make it look like it came from dropbox. Once he gains access, he can then use this as launching point for further unauthorized access.
 
+### Security Requirements
+
+To prevent this, DDP tools can be used and background configuration checks must also be done.
+
 ### UML Diagram
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%203.png)
 
-### Security Requirements
-
-To prevent this, DDP tools can be used and background configuration checks must also be done.
 
 ### 4. Send Customer Log Records
 
@@ -71,14 +72,16 @@ Consider a joint account with multiple owners. A client who is an owner of the j
 
 ### Misuse case
 
-Rogue teller wants to expose or overwrite sensitive information. He wants to tamper the log records to hide the illegal activity of the co-owner of  join account whom he colluded with.
+Rogue teller wants to expose or overwrite sensitive information. He wants to tamper the log records to hide the illegal activity of the co-owner of join account whom he colluded with.
 
 ### Security Requirements
 
 Security Requirements
 To prevent log tampering, certain immutable attributes can be included which can track every change in the log files.
 
+### UML Diagram
 
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%204.jpg)
 
 ## Alignment of security requirements with advertised features
 
@@ -95,7 +98,7 @@ To prevent log tampering, certain immutable attributes can be included which can
 ### Misuse case three:
 
 - Nextcloud uses plain and simple HTTP traffic for all file handling.
-- It does not protect against a hacked device or server, but prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks from being intercepted and is thus invaluable for a Nextcloud deployment.
+- It does not protect against a hacked device or server, but prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks from being intercepted.
 
 
 
