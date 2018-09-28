@@ -100,5 +100,16 @@ To prevent log tampering, certain immutable attributes can be included which can
 - Nextcloud uses plain and simple HTTP traffic for all file handling.
 - It does not protect against a hacked device or server, but prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks from being intercepted.
 
+## Security-related configuration and installation issues.
+
+### Security related misconfigurations
+
+- While sharing public links to files, users have the ability to use the public link instead of actually logging in into the application. A workaround provided for this is to deny access to all users that are not member of a group.
+
+- Admins should disable external storage option, so that users who have access to external storage cannot change files in the file system. 
+
+### Installation Issues
+
+Normal installation does plain HTTP but there is an ability to use SSL to encrypt server traffic and to protect users login and data in transit. If the server is to be publicly accessible, users should get a certificate signed by a commercial signing authority. All this is required because NextCloud runs on an Apache Server.
 
 
