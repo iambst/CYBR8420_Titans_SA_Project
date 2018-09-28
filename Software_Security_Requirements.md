@@ -65,6 +65,21 @@ To prevent this, DDP tools can be used and background configuration checks must 
 
 ### 4. Send Customer Log Records
 
+### Use case
+
+Consider a joint account with multiple owners. A client who is an owner of the joint account can request bank employee for log of all owners activity for the last 6 month period. Bank employee can share the activity log of the account to the client. Client can then view all logs related to transaction summary. 
+
+### Misuse case
+
+Rogue teller wants to expose or overwrite sensitive information. He wants to tamper the log records to hide the illegal activity of the co-owner of  join account whom he colluded with.
+
+### Security Requirements
+
+Security Requirements
+To prevent log tampering, certain immutable attributes can be included which can track every change in the log files.
+
+
+
 ## Alignment of security requirements with advertised features
 
 ### Misuse case one:
