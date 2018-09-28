@@ -58,9 +58,20 @@ To prevent this, DDP tools can be used and background configuration checks must 
 
 ## Alignment of security requirements with advertised features
 
-### Misuse case One:
+### Misuse case one:
 
 - Next cloud provides two-factor authentication.
 - Next cloud does not offer any progressive delays during login this may be vulnerable to a brute force attack by the hacker.
 - Next cloud offers a strong password policy by checking the password against the list of breached passwords from haveibeenpwnd.com. This check creates a hash of the password and sends the first five characters of this hash to the haveibeenpwnd.com API to retrieve a list of all hashes that start with them. Then it checks on the Nextcloud instance if the password hash is in the result set.
+
+### Misuse case two:
+
+- Next cloud implements SAML and Kerberos to provide strong authentication  for client server communication.
+
+### Misuse case three:
+
+- Nextcloud uses plain and simple HTTP traffic for all file handling.
+- It does not protect against a hacked device or server, but prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks from being intercepted and is thus invaluable for a Nextcloud deployment.
+
+
 
