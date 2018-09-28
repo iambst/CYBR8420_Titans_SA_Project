@@ -2,7 +2,7 @@
 
 ## Backstory
 
-Nextcloud offers self-hosted online file storage services. Files stored on Nextcloud server can be shared among multiple users with different levels of access permissions. Nextcloud is being used in banking and financial organizations to control business needs. It enables customers and bank employees collaborate by make their data available anywhere through efficient file sharing workflows.
+Nextcloud offers self-hosted online file storage services. Files stored on Nextcloud server can be shared among multiple users with different levels of access permissions. Nextcloud is being used in banking and financial organizations to control business needs. It enables customers and bank employees collaborate by make their data available anywhere through efficient file sharing workflows while keeping customer intelligence in-house.
 
 ## Essential Data Flows: Use Cases & Misuse Cases
 
@@ -29,6 +29,8 @@ Bank Teller receives an information request regarding the details of rate of int
 ### Misuse Case
 
 Rogue Client wants to gain unauthorized access to steal confidential information related to bank’s policies stored on the server. He tries to modify links to gain access to the other confidential information.  This can be prevented by encrypting links and protecting traffic with Transport Layer Security. 
+
+### UML Diagram
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%202.png)
 
