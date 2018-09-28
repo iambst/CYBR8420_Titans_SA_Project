@@ -2,7 +2,7 @@
 
 ## Backstory
 
-Nextcloud offers self-hosted online file storage services. Files stored on Nextcloud server can be shared among multiple users with different levels of access permissions. Nextcloud is being used in banking and financial organizations to control business needs. It enables customers and bank employees collaborate by make their data available anywhere through efficient file sharing workflows while keeping customer intelligence in-house.
+Nextcloud offers self-hosted online file storage services. Files stored on Nextcloud server can be shared among multiple users with different levels of access permissions. Nextcloud is being used in banking and financial organizations to control business needs. It enables customers and bank employees collaborate by making their data available anywhere through efficient file sharing workflows while keeping customer intelligence in-house.
 
 ## Essential Data Flows: Use Cases & Misuse Cases
 
@@ -85,20 +85,33 @@ To prevent log tampering, certain immutable attributes can be included which can
 
 ## Alignment of security requirements with advertised features
 
-### Misuse case one:
+### 1. View or Access Customer Profiles
 
 - Next cloud provides two-factor authentication.
 - Next cloud does not offer any progressive delays during login this may be vulnerable to a brute force attack by the hacker.
 - Next cloud offers a strong password policy by checking the password against the list of breached passwords from haveibeenpwnd.com. This check creates a hash of the password and sends the first five characters of this hash to the haveibeenpwnd.com API to retrieve a list of all hashes that start with them. Then it checks on the Nextcloud instance if the password hash is in the result set.
 
-### Misuse case two:
+### 2. Create and Share Links
 
-- Next cloud implements SAML and Kerberos to provide strong authentication  for client server communication.
 
-### Misuse case three:
+- The file sharing section through links provides Admin(bank employee) features to manage cloud shares. He can enforce password protection and also set default expiration date on link shares.
 
-- Nextcloud uses plain and simple HTTP traffic for all file handling.
-- It does not protect against a hacked device or server, but prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks from being intercepted.
+- Nextcloud also provides features to enabling SSL to encrypt all traffic between servers.
+
+- Nextcloud prevents data transfers on insecure networks like public WiFi networks, mobile devices or third party networks to protect from being intercepted.
+
+### 3. Access data from third-party clients
+
+- Nextcloud does not provide tools for Distributed Data Protection. 
+
+- However, it recommends configuring the background job Webcron, to enable Nextcloud to automatically detect files added to your external storages.
+
+### 4. Send Customer Log Records
+
+- Nextcloud activity app recommends running background jobs to detect unusual activity in the logs. 
+
+- It does not provide special attributes in the log file. But instead provides a console command, which allows to set up cron jobs on server with the known granularity. This sends the activity emails out whenever illegal activity is detected.
+
 
 ## Security-related configuration and installation issues.
 
