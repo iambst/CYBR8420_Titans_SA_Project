@@ -47,3 +47,11 @@ Rogue Client wants to compromise data on the bank’s server. He can deliberatel
 ### UML Diagram
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%203.png)
+
+### Security Requirement
+
+To prevent this, DDP tools can be used and background configuration checks must also be done.
+
+### 4. Send Customer Log Records
+
+
