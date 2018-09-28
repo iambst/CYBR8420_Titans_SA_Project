@@ -14,7 +14,11 @@ When an existing customer visits bank, Bank Teller needs to access the customer 
 
 ### Misuse Case
 
-Rogue Teller wants to gain unauthorized access to the server to steal customer information. He could use, brute-force attack, session hijacking, dictionary attack to gain access to the server. This attacks can be prevented by implementing progressive delays, invalidating session after logout and by enforcing strong password requirements respectively. However, strong passwords are still vulnerable to keylogger attacks. To prevent this, multi-factor authentication can be used.
+Rogue Teller wants to gain unauthorized access to the server to steal sensitive customer information. He could use, brute-force attack, session hijacking, dictionary attack to gain access to the server. 
+
+### Security Requirements
+
+This attacks can be prevented by implementing progressive delays, invalidating session after logout and by enforcing strong password requirements. However, strong passwords are still vulnerable to keylogger attacks. To prevent this, multi-factor authentication can be used.
 
 ### UML Diagram
 
@@ -28,7 +32,12 @@ Bank Teller receives an information request regarding the details of rate of int
 
 ### Misuse Case
 
-Rogue Client wants to gain unauthorized access to steal confidential information related to bank’s policies stored on the server. He tries to modify links to gain access to the other confidential information.  This can be prevented by encrypting links and protecting traffic with Transport Layer Security. 
+Rogue Client who is hired by rival bank, wants to gain unauthorized access to steal confidential information related to bank’s credit policy stored on the server. He tries to modify links to gain access to the other confidential information.  
+
+### Security Requirements
+
+Unauthorized access via shared links can be prevented by encrypting links and protecting traffic with Transport Layer Security. 
+
 
 ### UML Diagram
 
@@ -50,7 +59,7 @@ Rogue Client wants to compromise data on the bank’s server. He can deliberatel
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%203.png)
 
-### Security Requirement
+### Security Requirements
 
 To prevent this, DDP tools can be used and background configuration checks must also be done.
 
