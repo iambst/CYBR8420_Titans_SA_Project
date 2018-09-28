@@ -6,7 +6,7 @@ Nextcloud offers self-hosted online file storage services. Files stored on Nextc
 
 ## Essential Data Flows: Use Cases & Misuse Cases
 
-## 1. View or Access Customer Profiles
+### 1. View or Access Customer Profiles
 
 ### Use Case
 
@@ -19,3 +19,17 @@ Rogue Teller wants to gain unauthorized access to the server to steal customer i
 ### UML Diagram
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Misuse%20case%201.jpg)
+
+### 2. Create and Share Links
+
+### Use Case
+
+Bank Teller receives an information request regarding the details of rate of interest on personal loan from a client. In this case, the bank teller creates and shares the link of file which contains detailed information on rate of interest. The client can then use the link to view the information from anywhere.  
+
+### Misuse Case
+
+Rogue Client wants to gain unauthorized access to steal confidential information related to bank’s policies stored on the server. He tries to modify links to gain access to the other confidential information.  This can be prevented by encrypting links and protecting traffic with Transport Layer Security. 
+
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%202.png)
+
+
