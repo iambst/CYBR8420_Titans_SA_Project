@@ -83,6 +83,25 @@ To prevent log tampering, certain immutable attributes can be included which can
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%204.jpg)
 
+### 4. Add files to server
+
+### Use case
+
+A data processing officer connects to the Nextcloud server hosting all the banking information of its customers so as to add new data onto the server.
+
+### Misuse case
+
+A rogue data processing officer called Mr.Robot, connects to the Nextcloud server and uploads malware with an intention to execute it so as to compromise the bank’s nextcloud server.
+
+### Security Requirements
+
+To prevent rogue files from being added, the nextcloud server system must be equipped with the ability to detect malware beforehand.
+
+### UML Diagram
+
+
+
+
 ## Alignment of security requirements with advertised features
 
 ### 1. View or Access Customer Profiles
