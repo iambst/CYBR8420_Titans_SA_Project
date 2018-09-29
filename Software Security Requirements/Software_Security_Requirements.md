@@ -41,7 +41,7 @@ Unauthorized access via shared links can be prevented by encrypting links and pr
 
 ### UML Diagram
 
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%202.png)
+![alt text](misuse%20case%202.png)
 
 ### 3. Access data from third-party clients
 
@@ -61,7 +61,7 @@ To prevent this, DDP tools can be used and background configuration checks must 
 
 ### UML Diagram
 
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%203.png)
+![alt text](misuse%20case%203.png)
 
 
 ### 4. Send Customer Log Records
@@ -81,7 +81,7 @@ To prevent log tampering, certain immutable attributes can be included which can
 
 ### UML Diagram
 
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/misuse%20case%204.jpg)
+![alt text](misuse%20case%204.jpg)
 
 ### 4. Add files to server
 
@@ -99,7 +99,7 @@ To prevent rogue files from being added, the nextcloud server system must be equ
 
 ### UML Diagram
 
-
+![alt text](misUseCase5.png)
 
 
 ## Alignment of security requirements with advertised features
