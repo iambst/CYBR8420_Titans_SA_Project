@@ -168,4 +168,11 @@ Default SSL configurations by Web servers are often not state-of-the-art, and re
 
 Normal installation does plain HTTP but there is an ability to use SSL to encrypt server traffic and to protect users login and data in transit. If the server is to be publicly accessible, users should get a certificate signed by a commercial signing authority. All this is required because NextCloud runs on an Apache Server.
 
+## Additional Security-Related Observations
+
+- While sharing public links to files, users have the ability to use the public link instead of actually logging in into the application. A workaround provided for this is to deny access to all users that are not member of a group.
+
+- There is a possibility that users who have direct access to the external storage, can later change files there directly. Therefore it is recommended to disable the Allow users to mount external storage option, when trying to to completely lock out flagged users.
+
+
 
