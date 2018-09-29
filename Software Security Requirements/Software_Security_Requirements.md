@@ -22,7 +22,7 @@ This attacks can be prevented by implementing progressive delays, invalidating s
 
 ### UML Diagram
 
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Misuse%20case%201.jpg)
+![alt text](Misuse%20case%201.jpg)
 
 ### 2. Create and Share Links
 
