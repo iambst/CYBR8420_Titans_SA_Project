@@ -171,7 +171,7 @@ Default SSL configurations by Web servers are often not state-of-the-art, and re
 - A list of other Trusted Nextcloud servers can be added to the existing Netcloud server manually by using an in built app called 'Federation sharing', where the administrator requires 'username' and 'URL' of the user(s) on the remote Nextcloud server(s).
 - External Storage mounts are disabled by default. If they were to enabled, administrator must choose appropirate authentication mechanism
 - All the users can only access the Nextcloud server when the administrator has added them onto the server and shared the initial credentials
-- There are no permission groups sepcified by default. Must be created and allocated as required.
+- There are no permission groups specified by default. Must be created and allocated as required.
 
 
 ## Additional Security-Related Observations
@@ -180,5 +180,7 @@ Default SSL configurations by Web servers are often not state-of-the-art, and re
 
 - There is a possibility that users who have direct access to the external storage, can later change files there directly. Therefore it is recommended to disable the Allow users to mount external storage option, when trying to to completely lock out flagged users.
 
+## Project Board
 
+[Trello Project Board](https://trello.com/b/gPTAEzv4/sa-nextcloud)
 
