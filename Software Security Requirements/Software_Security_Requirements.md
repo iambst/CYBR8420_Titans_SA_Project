@@ -131,6 +131,12 @@ To prevent rogue files from being added, the nextcloud server system must be equ
 
 - It does not provide special attributes in the log file. But instead provides a console command, which allows to set up cron jobs on server with the known granularity. This sends the activity emails out whenever illegal activity is detected.
 
+### 5. Add files to server
+
+- Nextcloud server doesn't have the capability to scan for the uploaded file(s) so as to check if it is a malware 
+
+- It only supports authentication and authorization from vaid trusted servers and external storage mounts for sharing and adding of new data.
+
 
 ## Security-related configuration and installation issues.
 
