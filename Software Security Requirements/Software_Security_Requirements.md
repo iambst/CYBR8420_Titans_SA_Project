@@ -135,7 +135,7 @@ To prevent rogue files from being added, the nextcloud server system must be equ
 
 - Nextcloud server doesn't have the capability to scan for the uploaded file(s) so as to check if it is a malware 
 
-- It only supports authentication and authorization from vaid trusted servers and external storage mounts for sharing and adding of new data.
+- It only supports authentication and authorization from valid trusted servers and external storage mounts for sharing and adding of new data.
 
 
 ## Security-related configuration and installation issues.
