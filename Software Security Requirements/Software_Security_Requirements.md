@@ -166,7 +166,13 @@ Default SSL configurations by Web servers are often not state-of-the-art, and re
 
 ### Installation Issues
 
-Normal installation does plain HTTP but there is an ability to use SSL to encrypt server traffic and to protect users login and data in transit. If the server is to be publicly accessible, users should get a certificate signed by a commercial signing authority. All this is required because NextCloud runs on an Apache Server.
+- Nextcloud default installation doesn't include usage of HTTPS to encrypt server's incoming and outgoing traffic and to protect users data in transit. 
+- The administrator of the nextcloud must manually enforce HTTPS usage by installing new X.509 certificate from Let's Encrypt, a certificate issuing authority.
+- A list of other Trusted Nextcloud servers can be added to the existing Netcloud server manually by using an in built app called 'Federation sharing', where the administrator requires 'username' and 'URL' of the user(s) on the remote Nextcloud server(s).
+- External Storage mounts are disabled by default. If they were to enabled, administrator must choose appropirate authentication mechanism
+- All the users can only access the Nextcloud server when the administrator has added them onto the server and shared the initial credentials
+- There are no permission groups sepcified by default. Must be created and allocated as required.
+
 
 ## Additional Security-Related Observations
 
