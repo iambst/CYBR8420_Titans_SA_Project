@@ -83,7 +83,7 @@ To prevent log tampering, certain immutable attributes can be included which can
 
 ![alt text](misuse%20case%204.jpg)
 
-### 4. Add files to server
+### 5. Add files to server
 
 ### Use case
 
