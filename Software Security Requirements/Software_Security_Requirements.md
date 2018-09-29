@@ -140,11 +140,29 @@ To prevent rogue files from being added, the nextcloud server system must be equ
 
 ## Security-related configuration and installation issues.
 
-### Security related misconfigurations
+### Security related configuration
 
-- While sharing public links to files, users have the ability to use the public link instead of actually logging in into the application. A workaround provided for this is to deny access to all users that are not member of a group.
+Following are few observations on security related configuration issues.
 
-- Admins should disable external storage option, so that users who have access to external storage cannot change files in the file system. 
+### Limit on password length
+
+For security and performance reasons, Nextcloud uses bcrypt algorithm, it only verifies first 72 characters of passwords. This prevents Denial of Service attacks with long passwords. This applies to all passwords including user passwords, passwords on link shares, and passwords on external shares.
+
+### Operating System
+
+Nextcloud uses RFC 4086 mixer to generate cryptographically secure pseudo-random numbers. The random number generation also tries to request random numbers from /dev/urandom, thus it is highly recommended to configure setup in such a way that PHP is able to read random data from operating system.
+
+### Use HTTPS
+
+Using Nextcloud without using an encrypted HTTPS connection opens up server to a man-in-the-middle attack, and risks the interception of user data and passwords. It is a best practice, and highly recommended, to always use HTTPS on production servers, and to never allow unencrypted HTTP.
+
+### Enable HTTP Strict Transport Security
+Administrators are encouraged to set the HTTP Strict Transport Security header, which instructs browsers to not allow any connection to the Nextcloud instance using HTTP, and it attempts to prevent site visitors from bypassing invalid certificate warnings.
+
+This can be setup within Apache VirtualHost file.
+
+### Proper SSL configuration
+Default SSL configurations by Web servers are often not state-of-the-art, and require fine-tuning for an optimal performance and security experience. They recommend using Mozilla SSL Configuration Generator to generate a suitable configuration suited for the system environment. HTTP compression is also disabled to mitigate the BREACH attack.
 
 ### Installation Issues
 
