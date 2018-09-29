@@ -49,7 +49,7 @@ Unauthorized access via shared links can be prevented by encrypting links and pr
 
 Consider the scenario, where the bank teller requests client to provide proof of property documents in order to sanction loan. Client can then request bank teller that he is away from home and he can share copy of proof of documents stored in his dropbox. Bank Teller can use Nextcloud’s Mount External Storage feature. This feature provides a checkbox which when enabled allows clients in bank’s server share their external storage. Bank Teller can enable this feature and let client know that he can share the required documents through dropbox. Client can then share his document folder in dropbox directly through Nextcloud. 
 
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/usecase3_example.JPG)
+![alt text](usecase3_example.JPG)
 
 ### Misuse case
 
