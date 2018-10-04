@@ -57,11 +57,11 @@ Rogue Client wants to compromise data on the bank’s server. He can deliberatel
 
 ### Security Requirements
 
-To prevent this, DDP tools can be used and background configuration checks must also be done.
+To prevent this, Distributed Data Protection(DDP) tools can be used and background configuration such as Webcorn checks must also be done.
 
 ### UML Diagram
 
-![alt text](misuse%20case%203.png)
+![alt text](misuse%20case%204.jpg)
 
 
 ### 4. Send Customer Log Records
@@ -81,7 +81,8 @@ To prevent log tampering, certain immutable attributes can be included which can
 
 ### UML Diagram
 
-![alt text](misuse%20case%204.jpg)
+
+![alt text](misuse%20case%203.png)
 
 ### 5. Add files to server
 
