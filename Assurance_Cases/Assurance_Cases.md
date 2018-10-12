@@ -1,5 +1,5 @@
 ## Assurance Case 1
-![alt text](Protect_integrityconfidentiality_data (3).png)
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Protect_integrityconfidentiality_data%20(3).png)
 
 ## Assurance Case 2
 ![alt text](publicLinks_AClaim.jpeg)
