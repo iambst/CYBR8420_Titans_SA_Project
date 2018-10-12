@@ -27,6 +27,11 @@ uld be a report on attempted man-in-the-middle attacks to gain unauthorized acce
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/assuranceCase4.png)
 
+
+### Evidence:
+
+Evidence for C2 is found in the Nextcloud's Server Administration Manual. It is specified that administrator can make use of in built rules like access can be considered valid only from set of IP address, from particular user groups, collaborative tags and others. If a group contains multiple file access control rules, request to access the resource will only be catered if all the rules are satisfied. 
+
 ## Assurance Case 5
 
 ## Project Board
