@@ -11,6 +11,8 @@ Evidence for Claim C4 would be the log reports of file shares that is viewable f
 ## Assurance Case 3
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Assurance_login.png)
 
+### Evidence:
+
 ## Assurance Case 4
 
 ## Assurance Case 5
