@@ -1,4 +1,5 @@
 ## Assurance Case 1
+![alt text](Protect_integrityconfidentiality_data (3).png)
 
 ## Assurance Case 2
 ![alt text](publicLinks_AClaim.jpeg)
