@@ -21,7 +21,7 @@ Key ID: A724937A
 Fingerprint: 2880 6A87 8AE4 23A2 8372 792E D758 99B9 A724 937A
 
 ### Evidence 2:
-Evidence 2: Multiple layers of Encryption
+Multiple layers of Encryption
 There is an end-to-end encryption and data at rest in storage can be encrypted using a default military grade AES-256 encryption with server-based or custom key management.Data can be end-to-end encrypted on the client with the server assisting in sharing and key management using a Zero-Knowledge model.
 
 
