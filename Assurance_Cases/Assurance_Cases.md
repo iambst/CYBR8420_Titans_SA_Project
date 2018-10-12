@@ -25,6 +25,8 @@ uld be a report on attempted man-in-the-middle attacks to gain unauthorized acce
 
 ## Assurance Case 4
 
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/assuranceCase4.png)
+
 ## Assurance Case 5
 
 ## Project Board
