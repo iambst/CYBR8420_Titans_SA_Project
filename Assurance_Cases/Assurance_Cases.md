@@ -12,7 +12,12 @@ Evidence for Claim C4 would be the log reports of file shares that is viewable f
 ## Assurance Case 3
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Assurance_login.png)
 
-### Evidence:
+### Evidence :
+Evidence 1: PGP Key Submissions
+The following PGP Key is used for Confidential submission 
+Key ID: A724937A
+Fingerprint: 2880 6A87 8AE4 23A2 8372 792E D758 99B9 A724 937A
+
 
 ## Assurance Case 4
 
