@@ -32,6 +32,8 @@ Evidence for C2 is found in the [Next Cloud Server Manual](https://docs.nextclou
 
 ## Assurance Case 5
 
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/assuranceCase5.png)
+
 ## Project Board
 
 [Trello Project Board](https://trello.com/b/hX9YrfMw/sa-project-task-3)
