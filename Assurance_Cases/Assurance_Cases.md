@@ -1,5 +1,5 @@
 ## Assurance Case 1
-![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Protect_integrityconfidentiality_data.png)
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Protect_integrityconfidentiality_data%20(4).png)
 
 
 ### Evidence 1: PGP Key Submissions
