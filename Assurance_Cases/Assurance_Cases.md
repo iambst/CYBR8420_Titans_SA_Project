@@ -21,6 +21,10 @@ Evidence for Claim C4 would be the log reports of file shares that is viewable f
 ## Assurance Case 3
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/Assurance_login.png)
 
+### Evidence:
+
+It is mentioned in the documentation that Nextcloud's brute force protection mechanism makes requests coming from an suspicious IP slower for a 24 hour period which is the eveidence for Claim 2.Evidence for Claim 3 is given in the Next Cloud server manual. The server supports 2 factor authentication providing reasonable authenticity level.  The administrator can also enforce some strong password policy's proving Claim 4.
+
 ## Assurance Case 4
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/assuranceCase4.png)
@@ -33,6 +37,8 @@ Evidence for C2 is found in the [Next Cloud Server Manual](https://docs.nextclou
 ## Assurance Case 5
 
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Assurance_Cases/assuranceCase5.png)
+
+Evidence for C2 is supported by making use of both Version Control and Log files. Corrupted files can be identified by checking log files and also restoring can be easily done through Version control system.Many versions of a single file is maintained at various external web storage units. 
 
 ## Project Board
 
