@@ -28,7 +28,7 @@ Evidence for Claim C4 would be the log reports of file shares that is viewable f
 
 ### Evidence:
 
-Evidence for C2 is found in the Nextcloud's Server Administration Manual. It is specified that administrator can make use of in built rules like access can be considered valid only from set of IP address, from particular user groups, collaborative tags and others. If a group contains multiple file access control rules, request to access the resource will only be catered if all the rules are satisfied. 
+Evidence for C2 is found in the![Next Cloud Server Manual](https://docs.nextcloud.com/server/10/admin_manual/configuration_files/files_access_control.html). It is specified that administrator can make use of in built rules like access can be considered valid only from set of IP address, from particular user groups, collaborative tags and others. If a group contains multiple file access control rules, request to access the resource will only be catered if all the rules are satisfied. 
 
 ## Assurance Case 5
 
