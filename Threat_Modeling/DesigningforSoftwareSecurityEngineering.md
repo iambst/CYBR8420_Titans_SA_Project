@@ -6,7 +6,7 @@ Threat: An adversary can tamper critical database securables and deny the action
 Mitigation: 
 
 Threat: An adversary can deny access on database due to lack of auditing.
-Mitigation: Nextcloud logs data in the nextcloud.log file provided in the root of its data directory. We can optionally record a full audit trail there, provided the ‘info’ log level is set. This can be used by Data Loss Prevention and Mobile Device Management tools as user agent information is available alongside extensive user, IP and date/time logs.
+Mitigation: Nextcloud logs data in the nextcloud.log file provided in the root of its data directory. We can optionally record a full audit trail there, provided the ‘info’ log level is set. This can be used by Data Loss Prevention and Mobile Device Management tools as user agent information is available alongside extensive user, IP and date/time logs.The audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files".
 
 Threat: An adversary can gain access data by performing SQL injection.
 Mitigation: Next cloud emphasises to use prepared queries.If App framework is used it mentions the user to use the syntax to extend mapper class But it doesnot provide any mechanism to stop SQL injection.
