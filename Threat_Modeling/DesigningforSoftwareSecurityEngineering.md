@@ -2,6 +2,9 @@
 ## Threat Model Diagram
 
 ## Threat Model Analysis
+### Threat: An adversary may leverage the lack of monitoring systems and trigger anamolous traffic to database.
+Mitigation:
+
 ### Threat: An adversary can tamper critical database securables and deny the action.
 Mitigation: No digital signature is provided to the critical database securables and there is a risk of rogue user to tamper the critical database securables.
 
