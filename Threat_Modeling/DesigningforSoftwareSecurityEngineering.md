@@ -2,6 +2,9 @@
 ## Threat Model Diagram
 
 ## Threat Model Analysis
+Threat: An adversary can tamper critical database securables and deny the action.
+Mitigation: 
+
 Threat: An adversary can deny access on database due to lack of auditing.
 Mitigation: Nextcloud logs data in the nextcloud.log file provided in the root of its data directory. We can optionally record a full audit trail there, provided the ‘info’ log level is set. This can be used by Data Loss Prevention and Mobile Device Management tools as user agent information is available alongside extensive user, IP and date/time logs.
 
