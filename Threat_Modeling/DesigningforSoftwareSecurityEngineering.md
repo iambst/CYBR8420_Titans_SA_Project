@@ -2,7 +2,7 @@
 ## Threat Model Diagram
 
 ## Threat Model Analysis
-Threat:An adversary can gain access data by performing SQL injection
+Threat:An adversary can gain access data by performing SQL injection.
 Mitigation: Next cloud emphasises to use prepared queries.If App framework is used it mentions the user to use the syntax to extend mapper class But it doesnot provide any mechanism to stop SQL injection.
 
 Threat: An adversary can gain access to sensitive data in database
