@@ -3,7 +3,7 @@
 
 ## Threat Model Analysis
 ### Threat: An adversary may leverage the lack of monitoring systems and trigger anamolous traffic to database.
-Mitigation: Nextcloud logs all database access and provides a sufficient monitoring system to prevent any anamolous traffic to database.
+Mitigation: Nextcloud logs all database access and provides a sufficient monitoring system to prevent any anamolous traffic to database.Monitoring and systems intelligence tools openNMS and Splunk have support for monitoring Nextcloud 10+ systems.Admins can also opt for logging to the systemd log, allowing them to manage all logs of the system in one place. When enabled, the audit log is in a separate file.
 
 ### Threat: An adversary can tamper critical database securables and deny the action.
 Mitigation: No digital signature is provided to the critical database securables and there is a risk of rogue user to tamper the critical database securables.
