@@ -1,6 +1,6 @@
 
 ## Threat Model Diagram
-[Threat Model Report](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/ThreatModelReport.htm)
+[Threat Model Report](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Threat_Report_R1.htm
 
 ## Threat Model Analysis
 ### Threat: An adversary may leverage the lack of monitoring systems and trigger anamolous traffic to database.
