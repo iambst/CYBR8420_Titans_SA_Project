@@ -95,9 +95,13 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 ### Mitigation:
 Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
 
-
-### Threat:
+### Threat:Cross Site Request Forgery
 ### Mitigation:
+To prevent CSRF in an app, Nextcloud emphasizes to be sure to call the following method at the top of all user files:
+* <?php
+* OCP\JSON::callCheck();
+If user uses the App Framework, every controller method is automatically checked for CSRF unless you explicitly exclude it by setting the @NoCSRFRequired annotation before the controller method. 
+
 
 
 [Trello Project Board](https://trello.com/b/PG39aw1z/sa-project-task-4-threat-modeling)
