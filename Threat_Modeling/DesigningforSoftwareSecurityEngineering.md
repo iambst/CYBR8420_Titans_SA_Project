@@ -71,8 +71,9 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 ### Mitigation:
  Cross site scripting happens when user input is passed directly to templates. A potential attacker might be able to inject HTML/JavaScript into the page to steal the users session, log keyboard entries, even perform DDOS attacks on other websites or other malicious actions. Despite the fact that Nextcloud uses Content-Security-Policy to prevent the execution of inline JavaScript code developers are still required to prevent XSS. CSP is just another layer of defense that is not implemented in all web browsers. To prevent XSS in next cloud app	 user has to sanitize the templates and all JavaScripts which performs a DOM manipulation. If not there is a chance of Cross site Scripting.
 
-### Threat:
+### Threat:Spoofing the Web Browser External Entity
 ### Mitigation:
+Nextcloud provides Two-factor authentication (2FA) It is a way to protect your Nextcloud account against unauthorized access. It works by requiring two different ‘proofs’ of your identity. For example, something you know (like a password) and something you have like a physical key. Typically, the first factor is a password like you already have and the second can be a text message you receive or a code you generate on your phone or another device (something you have). Nextcloud supports a variety of 2nd factors and more can be added.
 
 ### Threat:
 ### Mitigation:
