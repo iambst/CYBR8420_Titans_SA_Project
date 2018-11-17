@@ -83,8 +83,9 @@ In next cloud server 2FA actions also show up in the Activities app so you can k
 ### Mitigation:
 Due to usage of PHP scripting language there is potential chance for Denial of Service attacks.Though next cloud deals with a few denial service attacks it doesnot prevent all of them and there were numerous points where the was running slowly and crashed.
 
-### Threat:
+### Threat:Data Flow HTTPS Request Is Potentially Interrupted
 ### Mitigation:
+Data Transfer from Nextcloud employs industry-standard TLS to encrypt data in transfer. This prevents interruption of data flow across a trust boundary in either direction.
 
 ### Threat:
 ### Mitigation:
