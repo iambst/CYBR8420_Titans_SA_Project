@@ -47,4 +47,36 @@ Data flow to the datastore in Nextcloud is secured. Data Transfer from Nextcloud
 ### Mitigation:
 In Nextcloud server data storage can be encrypted using a default military grade AES-256 encryption with server-based or custom key management which prevents external entity writing data.
 
+### Threat:Data Flow Sniffing
+### Mitigation:
+Sniffing of data Data flowing across Customer Data Request is mitigated in Nextcloud server by provides encryption during data transfer. This is done by employing industry-standard TLS to encrypt data in transfer in Nextcloud.
+
+### Threat:Weak Credential Transit
+### Mitigation:
+Nextcloud has built-in two-factor authentication. It also has mechanisms like TOTP and U2F which  require password confirmation when changing their settings to ensure a malicious attacker cannot simply disable them. Second, U2F can have multiple tokens; and there is also is support for NFC tokens. 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. Moreover credentials when transferred are also encrypted. The links shared are password protected.
+
+### Threat:Data Flow Customer Data Request Is Potentially Interrupted
+### Mitigation:
+Data Transfer from Nextcloud employs industry-standard TLS to encrypt data in transfer. This prevents interruption of data flow across a trust boundary in either direction.
+
+### Threat:Data Store Inaccessible
+### Mitigation:
+In Nextcloud server data storage can be encrypted using a default military grade AES-256 encryption with server-based or custom key management which prevents external entity to access data store on the other side of the trust boundary.
+
+### Threat:Elevation Using Impersonation
+### Mitigation:
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
+
+### Threat:Cross Site Scripting
+### Mitigation:
+ Cross site scripting happens when user input is passed directly to templates. A potential attacker might be able to inject HTML/JavaScript into the page to steal the users session, log keyboard entries, even perform DDOS attacks on other websites or other malicious actions. Despite the fact that Nextcloud uses Content-Security-Policy to prevent the execution of inline JavaScript code developers are still required to prevent XSS. CSP is just another layer of defense that is not implemented in all web browsers. To prevent XSS in next cloud app	 user has to sanitize the templates and all JavaScripts which performs a DOM manipulation. If not there is a chance of Cross site Scripting.
+
+### Threat:
+### Mitigation:
+
+### Threat:
+### Mitigation:
+
+### Threat:
+### Mitigation:
 [Trello Project Board](https://trello.com/b/PG39aw1z/sa-project-task-4-threat-modeling)
