@@ -93,7 +93,7 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 
 ### Threat:Elevation by Changing the Execution Flow in NextCloud Logic API
 ### Mitigation:
-Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
 
 
 ### Threat:
