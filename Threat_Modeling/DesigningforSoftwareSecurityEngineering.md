@@ -87,11 +87,14 @@ Due to usage of PHP scripting language there is potential chance for Denial of S
 ### Mitigation:
 Data Transfer from Nextcloud employs industry-standard TLS to encrypt data in transfer. This prevents interruption of data flow across a trust boundary in either direction.
 
-### Threat:
+### Threat:NextCloud Logic API May be Subject to Elevation of Privilege Using Remote Code Execution
 ### Mitigation:
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
 
-### Threat:
+### Threat:Elevation by Changing the Execution Flow in NextCloud Logic API
 ### Mitigation:
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in,OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges,OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations
+
 
 ### Threat:
 ### Mitigation:
