@@ -75,9 +75,12 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 ### Mitigation:
 Nextcloud provides Two-factor authentication (2FA) It is a way to protect your Nextcloud account against unauthorized access. It works by requiring two different ‘proofs’ of your identity. For example, something you know (like a password) and something you have like a physical key. Typically, the first factor is a password like you already have and the second can be a text message you receive or a code you generate on your phone or another device (something you have). Nextcloud supports a variety of 2nd factors and more can be added.
 
-### Threat:
+### Threat:Potential Data Repudiation by NextCloud Logic API
 ### Mitigation:
+In next cloud server 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. The user gets notifications on phone and desktop when a user on another cloud server shares files. This kind of prevents External Entity from denying the data being received. But the audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files".
 
-### Threat:
+### Threat:Potential Process Crash or Stop for NextCloud Logic API
 ### Mitigation:
+Due to usage of PHP scripting language there is potential chance for Denial of Service attacks.Though next cloud deals with a few denial service attacks it doesnot prevent all of them and there were numerous points where the was running slowly and crashed.
+
 [Trello Project Board](https://trello.com/b/PG39aw1z/sa-project-task-4-threat-modeling)
