@@ -98,9 +98,10 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 ### Threat:Cross Site Request Forgery
 ### Mitigation:
 To prevent CSRF in an app, Nextcloud emphasizes to be sure to call the following method at the top of all user files:
-* <?php
 * OCP\JSON::callCheck();
 If user uses the App Framework, every controller method is automatically checked for CSRF unless you explicitly exclude it by setting the @NoCSRFRequired annotation before the controller method. 
+
+
 
 
 
