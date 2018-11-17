@@ -105,6 +105,8 @@ If user uses the App Framework, every controller method is automatically checked
 ### Mitigation:
 Nextcloud provides Two-factor authentication (2FA). It is a way to protect your Nextcloud account against unauthorized access. It works by requiring two different ‘proofs’ of your identity. For example, something you know (like a password) and something you have like a physical key. Typically, the first factor is a password like you already have and the second can be a text message you receive or a code you generate on your phone or another device (something you have). Nextcloud supports a variety of 2nd factors and more can be added.
 
+### Threat: External Entity Web Browser Potentially Denies Receiving Data
+### Mitigation:
 
 
 
