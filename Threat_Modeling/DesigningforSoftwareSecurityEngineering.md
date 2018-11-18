@@ -117,6 +117,7 @@ Of all the threats Identified, we found threats majorly categorized into five ma
 * Tampering.
 * Elevation of Privilege.
 * Information Disclosure.
+
 We identifies the following threats as high priority:
 ### Threat: Elevation Using Impersonation
 ### Mitigation:
