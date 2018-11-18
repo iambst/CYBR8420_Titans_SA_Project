@@ -160,7 +160,7 @@ Nextcloud has built-in two-factor authentication. It also has mechanisms like TO
 ### Threat:External Entity Web Browser Potentially Denies Receiving Data
 ### Mitigation:
 In next cloud server 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. The user gets notifications on phone and desktop when a user on another cloud server shares files. This kind of prevents External Entity from denying the data being received. But the audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files".
-Next cloud accepts certain risks and the analysis is present below for the accepted risks.
+### Next cloud accepts certain risks and the analysis is present below for the accepted risks:
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
 ### Denial of Service
