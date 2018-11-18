@@ -131,7 +131,17 @@ Nextcloud can be run through a reverse proxy, which can cache static assets such
 ### Threat:Potential SQL Injection Vulnerability for NextCloud Database
 ### Mitigation:
 Next cloud emphasises to use prepared queries.If App framework is used it mentions the user to use the syntax to extend mapper class But it doesnot provide any mechanism to stop SQL injection.
-
+### Threat:Data Flow Customer Data Request Is Potentially Interrupted
+### Mitigation:
+Data Transfer from Nextcloud employs industry-standard TLS to encrypt data in transfer. This prevents interruption of data flow across a trust boundary in either direction.
+### Threat:Potential Process Crash or Stop for NextCloud Logic API
+### Mitigation:
+Due to usage of PHP scripting language there is potential chance for Denial of Service attacks.Though next cloud deals with a few denial service attacks it doesnot prevent all of them and there were numerous points where the was running slowly and crashed.
+### Threat:Cross Site Request Forgery
+### Mitigation:
+To prevent CSRF in an app, Nextcloud emphasizes to be sure to call the following method at the top of all user files:
+* OCP\JSON::callCheck();
+If user uses the App Framework, every controller method is automatically checked for CSRF unless you explicitly exclude it by setting the @NoCSRFRequired annotation before the controller method.
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
