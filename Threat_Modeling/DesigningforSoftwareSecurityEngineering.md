@@ -130,10 +130,10 @@ Next cloud accepts certain risks and the analysis is present below for the accep
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
 ### Denial of Service
-Due to the usage of the PHP scripting language we do consider Denial of Service not something that can at the moment be completely prevented. For this reason nextcloud fixes and acknowledges specific Denial of Service attacks.
+Due to the usage of the PHP scripting language we do consider Denial of Service not something that can at the moment be completely prevented in Nextcloud. For this reason nextcloud fixes and acknowledges specific Denial of Service attacks.
 ### Local external storage systems are considered trusted
-Next cloud considers local mounted storage systems as trusted, so if a symlink or something else is configured on the external storage the Nextcloud server will follow it with the web server privileges.For this reason we do administrators are recommended to only use the external storage mount for ultimately trusted content.
-Server-side encryption
+Next cloud considers local mounted storage systems as trusted, so if a symlink or something else is configured on the external storage the Nextcloud server will follow it with the web server privileges.For this reason administrators are recommended to only use the external storage mount for ultimately trusted content.
+### Server-side encryption
 Nextcloud can be configured to encrypt data at rest. This has two options: server-wide key (default since Nextcloud 13) or per-user key. With the former, the keys are on the server and thus the only protection offered is against external storage. With per-user keys, the keys are encrypted by the user password and handled as securely as possible, thus securing data when the user is not logged in.  Nextcloud administrator could still intercept the user password to manually decrypt the encryption key. So nextcloud only considers attack scenarios bounty-worthy if they include an external storage vector or, with per-user-keys, data-at-rest.
 ### Client-side encryption
 Nextcloud client-side (or end-to-end) encryption is designed to protect user data from the server in nearly all scenario's. Any way to circumvent the protection as covered by the security properties would be treated by us as a security issue. 
@@ -148,7 +148,7 @@ Nextcloud considers attacks involving other Android apps on the device as low or
 ### Content spoofing
 Next cloud does not consider content spoofing as a bounty-worthy vulnerability.
 ### User enumeration
-Nextcloud considers user enumeration a security risk as for convenience and for features such as Server-to-Server sharing this is an expected behaviour.
+Nextcloud considers user enumeration a security risk as for convenience and for features such as Server-to-Server sharing it is considered as an expected behaviour.
 ### Brute force of credentials
 Nextcloud 12 introduced brute force protection. If user finds a way in which it is broken, it could qualify as a security issue. Nextcloud states that using TOR or similar solutions can be used to circumvent IP address based brute force protection. It is also not implemented in all endpoints, but should not allow guessing passwords at great speed from a single IP address.
 ### Server-side request forgery
