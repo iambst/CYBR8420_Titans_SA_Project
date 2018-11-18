@@ -124,9 +124,9 @@ We identifies the following threats as high priority:
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
-Denial of Service
+### Denial of Service
 Due to the usage of the PHP scripting language we do consider Denial of Service not something that can at the moment be completely prevented. For this reason nextcloud fixes and acknowledges specific Denial of Service attacks.
-Local external storage systems are considered trusted
+### Local external storage systems are considered trusted
 Next cloud considers local mounted storage systems as trusted, so if a symlink or something else is configured on the external storage the Nextcloud server will follow it with the web server privileges.For this reason we do administrators are recommended to only use the external storage mount for ultimately trusted content.
 Server-side encryption
 Nextcloud can be configured to encrypt data at rest. This has two options: server-wide key (default since Nextcloud 13) or per-user key. With the former, the keys are on the server and thus the only protection offered is against external storage. With per-user keys, the keys are encrypted by the user password and handled as securely as possible, thus securing data when the user is not logged in.  Nextcloud administrator could still intercept the user password to manually decrypt the encryption key. So nextcloud only considers attack scenarios bounty-worthy if they include an external storage vector or, with per-user-keys, data-at-rest.
