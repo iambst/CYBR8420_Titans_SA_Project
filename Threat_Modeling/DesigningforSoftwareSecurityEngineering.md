@@ -150,9 +150,9 @@ Next cloud does not consider content spoofing as a bounty-worthy vulnerability.
 ### User enumeration
 Nextcloud considers user enumeration a security risk as for convenience and for features such as Server-to-Server sharing this is an expected behaviour.
 ### Brute force of credentials
-Nextcloud 12 introduced brute force protection. If you find a way in which it is broken, it could qualify as a security issue. Of course we're aware that using TOR or similar solutions can be used to circumvent IP address based brute force protection. It is also not implemented in all endpoints, but should not allow guessing passwords at great speed from a single IP address.
+Nextcloud 12 introduced brute force protection. If user finds a way in which it is broken, it could qualify as a security issue. Nextcloud states that using TOR or similar solutions can be used to circumvent IP address based brute force protection. It is also not implemented in all endpoints, but should not allow guessing passwords at great speed from a single IP address.
 ### Server-side request forgery
-Nextcloud ships with multiple features that perform sending requests to other hosts, we do consider this accepted behaviour and advocate people to deploy Nextcloud into its own seggregated network segment.
+Nextcloud ships with multiple features that perform sending requests to other hosts, Nextcloud considers this accepted behaviour and advocates people to deploy Nextcloud into its own seggregated network segment.
 
 
 
