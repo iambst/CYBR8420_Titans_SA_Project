@@ -109,7 +109,7 @@ Nextcloud provides Two-factor authentication (2FA). It is a way to protect your 
 ### Mitigation:
 In next cloud server 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. The user gets notifications on phone and desktop when a user on another cloud server shares files. This kind of prevents External Entity from denying the data being received. But the audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files".
 
-## Analysis of Threats
+## Summary and observations of Threats
 Of all the threats Identified, we found threats majorly categorized into five main categories:
 Spoofing,Denial of Service.Repudiation,Tampering,Elevation of Privilege,Information Disclosure.
 We identifies the following threats as high priority:
