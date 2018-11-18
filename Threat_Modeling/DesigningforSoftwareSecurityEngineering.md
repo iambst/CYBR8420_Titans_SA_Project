@@ -125,23 +125,40 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 *	OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges
 *	OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.
 Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
+
 ### Threat:Spoofing of the Third-Party WebServer External Destination Entity
 ### Mitigation:
 Nextcloud can be run through a reverse proxy, which can cache static assets such as images, CSS or JS files, move the load of handling HTTPS to a different server or load balance between multiple servers.Next cloud emphasizes to define the trusted proxies parameter  as an array of IP address to define the servers Nextcloud should trust as proxies. Nextcloud uses the de-facto standard header ‘X-Forwarded-For’ by default, but this can be configured with the forwarded_for_headers parameter. This parameter is an array of PHP lookup strings, for example ‘X-Forwarded-For’ becomes ‘HTTP_X_FORWARDED_FOR’. If the parameter is set incorrectly there is a chance for clients to spoof their IP address as visible to Nextcloud, even when going through the trusted proxy.
+
 ### Threat:Potential SQL Injection Vulnerability for NextCloud Database
 ### Mitigation:
 Next cloud emphasises to use prepared queries.If App framework is used it mentions the user to use the syntax to extend mapper class But it doesnot provide any mechanism to stop SQL injection.
+
 ### Threat:Data Flow Customer Data Request Is Potentially Interrupted
 ### Mitigation:
 Data Transfer from Nextcloud employs industry-standard TLS to encrypt data in transfer. This prevents interruption of data flow across a trust boundary in either direction.
+
 ### Threat:Potential Process Crash or Stop for NextCloud Logic API
 ### Mitigation:
 Due to usage of PHP scripting language there is potential chance for Denial of Service attacks.Though next cloud deals with a few denial service attacks it doesnot prevent all of them and there were numerous points where the was running slowly and crashed.
+
 ### Threat:Cross Site Request Forgery
 ### Mitigation:
 To prevent CSRF in an app, Nextcloud emphasizes to be sure to call the following method at the top of all user files:
 * OCP\JSON::callCheck();
 If user uses the App Framework, every controller method is automatically checked for CSRF unless you explicitly exclude it by setting the @NoCSRFRequired annotation before the controller method.
+
+### Threat:Spoofing of the Web Browser External Destination Entity
+### Mitigation:
+Nextcloud provides Two-factor authentication (2FA). It is a way to protect your Nextcloud account against unauthorized access. It works by requiring two different ‘proofs’ of your identity. For example, something you know (like a password) and something you have like a physical key. Typically, the first factor is a password like you already have and the second can be a text message you receive or a code you generate on your phone or another device (something you have). Nextcloud supports a variety of 2nd factors and more can be added.
+
+### Threat:Weak Credential Transit
+### Mitigation:
+Nextcloud has built-in two-factor authentication. It also has mechanisms like TOTP and U2F which  require password confirmation when changing their settings to ensure a malicious attacker cannot simply disable them. Second, U2F can have multiple tokens; and there is also is support for NFC tokens. 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. Moreover credentials when transferred are also encrypted. The links shared are password protected.
+
+### Threat:External Entity Web Browser Potentially Denies Receiving Data
+### Mitigation:
+In next cloud server 2FA actions also show up in the Activities app so you can keep an eye on when and where logins take place. The user gets notifications on phone and desktop when a user on another cloud server shares files. This kind of prevents External Entity from denying the data being received. But the audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files".
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
