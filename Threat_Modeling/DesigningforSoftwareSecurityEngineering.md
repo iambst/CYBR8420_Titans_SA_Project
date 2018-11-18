@@ -118,22 +118,20 @@ Of all the threats Identified, we found threats majorly categorized into five ma
 * Elevation of Privilege.
 * Information Disclosure.
 We identifies the following threats as high priority:
+### Threat: Elevation Using Impersonation
+### Mitigation:
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.
+*	OCP\JSON::checkLoggedIn(): Checks if the logged in user is logged in
+*	OCP\JSON::checkAdminUser(): Checks if the logged in user has admin privileges
+*	OCP\JSON::checkSubAdminUser(): Checks if the logged in user has group admin privileges.
+Using the App Framework, these checks are already automatically performed for each request and have to be explicitly turned off by using annotations.
 ### Threat:Spoofing of the Third-Party WebServer External Destination Entity
 ### Mitigation:
-### Threat:Data Flow Checks User Access Rights Is Potentially Interrupted
+Nextcloud can be run through a reverse proxy, which can cache static assets such as images, CSS or JS files, move the load of handling HTTPS to a different server or load balance between multiple servers.Next cloud emphasizes to define the trusted proxies parameter  as an array of IP address to define the servers Nextcloud should trust as proxies. Nextcloud uses the de-facto standard header ‘X-Forwarded-For’ by default, but this can be configured with the forwarded_for_headers parameter. This parameter is an array of PHP lookup strings, for example ‘X-Forwarded-For’ becomes ‘HTTP_X_FORWARDED_FOR’. If the parameter is set incorrectly there is a chance for clients to spoof their IP address as visible to Nextcloud, even when going through the trusted proxy.
+### Threat:Potential SQL Injection Vulnerability for NextCloud Database
 ### Mitigation:
-### Threat:Spoofing of Destination Data Store NextCloud Database
-### Mitigation:
-### Threat:Cross Site Request Forgery
-### Mitigation:
-### Threat:Potential Excessive Resource Consumption for NextCloud Storage API or NextCloud Database
-### Mitigation:
-### Threat:Data Flow Sniffing
-### Mitigation:
-### Threat:Cross Site Scripting
-### Mitigation:
-### Threat:Weak Access Control for a Resource
-### Mitigation:
+Next cloud emphasises to use prepared queries.If App framework is used it mentions the user to use the syntax to extend mapper class But it doesnot provide any mechanism to stop SQL injection.
+
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
