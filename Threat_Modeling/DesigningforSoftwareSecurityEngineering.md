@@ -112,6 +112,16 @@ In next cloud server 2FA actions also show up in the Activities app so you can k
 ## Analysis of Threats
 Of all the threats Identified, we found threats majorly categorized into five main categories:
 Spoofing,Denial of Service.Repudiation,Tampering,Elevation of Privilege,Information Disclosure.
+We identifies the following threats as high priority:
+* Spoofing of the Third-Party WebServer External Destination Entity
+* Data Flow Checks User Access Rights Is Potentially Interrupted
+* Spoofing of Destination Data Store NextCloud Database
+* Cross Site Request Forgery
+* Potential Excessive Resource Consumption for NextCloud Storage API or NextCloud Database
+* Data Flow Sniffing
+* Cross Site Scripting
+* Weak Access Control for a Resource
+
 
 
 
