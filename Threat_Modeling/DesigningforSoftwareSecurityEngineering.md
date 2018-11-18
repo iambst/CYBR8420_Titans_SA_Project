@@ -111,16 +111,21 @@ In next cloud server 2FA actions also show up in the Activities app so you can k
 
 ## Summary and observations of Threats
 Of all the threats Identified, we found threats majorly categorized into five main categories:
-Spoofing,Denial of Service.Repudiation,Tampering,Elevation of Privilege,Information Disclosure.
+* Spoofing
+* Denial of Service.
+* Repudiation.
+* Tampering.
+* Elevation of Privilege.
+* Information Disclosure.
 We identifies the following threats as high priority:
-* Spoofing of the Third-Party WebServer External Destination Entity
-* Data Flow Checks User Access Rights Is Potentially Interrupted
-* Spoofing of Destination Data Store NextCloud Database
-* Cross Site Request Forgery
-* Potential Excessive Resource Consumption for NextCloud Storage API or NextCloud Database
-* Data Flow Sniffing
-* Cross Site Scripting
-* Weak Access Control for a Resource
+### Threat:Spoofing of the Third-Party WebServer External Destination Entity
+### Threat:Data Flow Checks User Access Rights Is Potentially Interrupted
+### Threat:Spoofing of Destination Data Store NextCloud Database:
+### Threat:Cross Site Request Forgery
+### Threat:Potential Excessive Resource Consumption for NextCloud Storage API or NextCloud Database
+### Threat:Data Flow Sniffing
+### Threat:Cross Site Scripting
+### Threat:Weak Access Control for a Resource
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
