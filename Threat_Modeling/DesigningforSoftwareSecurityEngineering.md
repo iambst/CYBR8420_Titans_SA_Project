@@ -119,13 +119,21 @@ Of all the threats Identified, we found threats majorly categorized into five ma
 * Information Disclosure.
 We identifies the following threats as high priority:
 ### Threat:Spoofing of the Third-Party WebServer External Destination Entity
+### Mitigation:
 ### Threat:Data Flow Checks User Access Rights Is Potentially Interrupted
-### Threat:Spoofing of Destination Data Store NextCloud Database:
+### Mitigation:
+### Threat:Spoofing of Destination Data Store NextCloud Database
+### Mitigation:
 ### Threat:Cross Site Request Forgery
+### Mitigation:
 ### Threat:Potential Excessive Resource Consumption for NextCloud Storage API or NextCloud Database
+### Mitigation:
 ### Threat:Data Flow Sniffing
+### Mitigation:
 ### Threat:Cross Site Scripting
+### Mitigation:
 ### Threat:Weak Access Control for a Resource
+### Mitigation:
 Next cloud accepts certain risks and the analysis is present below for the accepted risks.
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
