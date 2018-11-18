@@ -141,9 +141,9 @@ Next cloud considers version disclosure an accepted risk as an attacker can enum
 ### Attacks involving other Android apps on the device
 Nextcloud considers attacks involving other Android apps on the device as low or medium risk. Stored files can be hidden from other apps if appropriate storage option is selected inside the app. This should be secure, however, if the phone is compromised Nextcloud doesnot guarantee data safety.
 ### Content spoofing
-Generally speaking we consider content spoofing not a bounty-worthy vulnerability.
+Next cloud does not consider content spoofing as a bounty-worthy vulnerability.
 ### User enumeration
-We do not consider user enumeration a security risk as for convenience and for features such as Server-to-Server sharing this is an expected behaviour.
+Nextcloud considers user enumeration a security risk as for convenience and for features such as Server-to-Server sharing this is an expected behaviour.
 ### Brute force of credentials
 Nextcloud 12 introduced brute force protection. If you find a way in which it is broken, it could qualify as a security issue. Of course we're aware that using TOR or similar solutions can be used to circumvent IP address based brute force protection. It is also not implemented in all endpoints, but should not allow guessing passwords at great speed from a single IP address.
 ### Server-side request forgery
