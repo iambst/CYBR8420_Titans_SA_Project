@@ -130,23 +130,23 @@ Due to the usage of the PHP scripting language we do consider Denial of Service 
 Next cloud considers local mounted storage systems as trusted, so if a symlink or something else is configured on the external storage the Nextcloud server will follow it with the web server privileges.For this reason we do administrators are recommended to only use the external storage mount for ultimately trusted content.
 Server-side encryption
 Nextcloud can be configured to encrypt data at rest. This has two options: server-wide key (default since Nextcloud 13) or per-user key. With the former, the keys are on the server and thus the only protection offered is against external storage. With per-user keys, the keys are encrypted by the user password and handled as securely as possible, thus securing data when the user is not logged in.  Nextcloud administrator could still intercept the user password to manually decrypt the encryption key. So nextcloud only considers attack scenarios bounty-worthy if they include an external storage vector or, with per-user-keys, data-at-rest.
-Client-side encryption
+### Client-side encryption
 Nextcloud client-side (or end-to-end) encryption is designed to protect user data from the server in nearly all scenario's. Any way to circumvent the protection as covered by the security properties would be treated by us as a security issue. 
-Features intentionally marked as insecure
+### Features intentionally marked as insecure
 Some features in Nextcloud are intentionally marked as insecure and disabled by default (plus have a big warning above them). One example includes the preview providers such as the LibreOffice preview provider.
-Audit logging
+### Audit logging
 The audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files", these will be added in a future release and known issues are tracked in issue tracker. 
-Version disclosure
+### Version disclosure
 Next cloud considers version disclosure an accepted risk as an attacker can enumerate service versions using other means as well. (e.g. comparing behaviour)
-Attacks involving other Android apps on the device
+### Attacks involving other Android apps on the device
 Nextcloud considers attacks involving other Android apps on the device as low or medium risk. Stored files can be hidden from other apps if appropriate storage option is selected inside the app. This should be secure, however, if the phone is compromised Nextcloud doesnot guarantee data safety.
-Content spoofing
+### Content spoofing
 Generally speaking we consider content spoofing not a bounty-worthy vulnerability.
-User enumeration
+### User enumeration
 We do not consider user enumeration a security risk as for convenience and for features such as Server-to-Server sharing this is an expected behaviour.
-Brute force of credentials
+### Brute force of credentials
 Nextcloud 12 introduced brute force protection. If you find a way in which it is broken, it could qualify as a security issue. Of course we're aware that using TOR or similar solutions can be used to circumvent IP address based brute force protection. It is also not implemented in all endpoints, but should not allow guessing passwords at great speed from a single IP address.
-Server-side request forgery
+### Server-side request forgery
 Nextcloud ships with multiple features that perform sending requests to other hosts, we do consider this accepted behaviour and advocate people to deploy Nextcloud into its own seggregated network segment.
 
 
