@@ -51,6 +51,13 @@ For this reason while Nextcloud do fix and acknowledge specific Denial of Servic
 
 ### Elevation of Privilege
 
+Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.
+
+* OCP\JSON::checkLoggedIn() -  Checks if the logged in user is logged in
+* OCP\JSON::checkAdminUser()-  Checks if the logged in user has admin privileges
+* OCP\JSON::checkSubAdminUser()- Checks if the logged in user has group admin privileges
+
+These checks are automatically performed for each request and have to be explicitly turned off by using annotations if necessary. 
 
 
 We identify the following threats as high priority:
