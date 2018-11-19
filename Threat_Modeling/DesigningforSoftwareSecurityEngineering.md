@@ -16,6 +16,11 @@ The following Level-1 diagram expands the Level-0 diagram further by including d
 
 Nextcloud has built-in two-factor authentication. It also has mechanisms like Time-based One-Time Password and Universal 2nd Factor which require password confirmation when changing their settings to ensure a malicious attacker cannot simply disable them. Universal 2nd Factor can have multiple tokens and there is also is support for near field communication (NFC) tokens. Two-factor authentication actions also show up in the Activities. This lets user keep an eye on when and where logins take place. Additionally, credentials when transferred are also encrypted. 
 
+### Tampering
+
+* Nextcloud uses Content-Security-Policy to prevent the execution of inline JavaScript code. This mitigates cross site scripting. Additionally, Nextcloud suggests developers of Nextcloud Server related apps that the user has to sanitize the templates and all JavaScripts which performs a DOM manipulation.
+
+* Nextcloud also uses prepared queries. If App framework is used, it mentions the user to use the syntax to extend mapper class.
 
 
 We identify the following threats as high priority:
