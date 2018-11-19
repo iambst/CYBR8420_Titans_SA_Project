@@ -41,7 +41,16 @@ Second, data can be encrypted on storage. The Nextcloud Server Side Encryption f
 Thirdly, Nextcloud offers end-to-end encryption on the client side. The Nextcloud End to End encryption feature is designed such that the server never has access to unencrypted files or keys, nor does server-provided code ever handle unencrypted data which could provide avenues for compromise. Cryptographic Identity Protection in the form of server signed certificates and a Trust On First Use (TOFU) model protects against attackers trying to impersonate other users. 
 
 
-### 
+### Denial of Service
+
+Nextcloud uses the bcrypt algorithm to prevent Denial of Service, as CPU demand increases exponentially, it only verifies the first 72 characters of passwords. This applies to all passwords that are used in Nextcloud including user passwords, passwords on link shares, and passwords on external shares.
+
+However, Nextcloud uses PHP scripting language. In 2011 the Chaos Computer Club revealed a major complexity attack vulnerability that works across all major languages including PHP. PHP addressed the vulnerability for forms but never really fixed it. 
+
+For this reason while Nextcloud do fix and acknowledge specific Denial of Service attacks they generally do not consider DoS a high-risk vulnerability.
+
+### Elevation of Privilege
+
 
 
 We identify the following threats as high priority:
