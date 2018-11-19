@@ -10,7 +10,13 @@ The following Level-1 diagram expands the Level-0 diagram further by including d
 
 [Threat Model Report Level - 1](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Threat_Report_R3.htm)
 
-## Summary and observations of Threats
+## Summary of Observations
+
+### Spoofing
+
+Nextcloud has built-in two-factor authentication. It also has mechanisms like Time-based One-Time Password and Universal 2nd Factor which require password confirmation when changing their settings to ensure a malicious attacker cannot simply disable them. Universal 2nd Factor can have multiple tokens and there is also is support for near field communication (NFC) tokens. Two-factor authentication actions also show up in the Activities. This lets user keep an eye on when and where logins take place. Additionally, credentials when transferred are also encrypted. 
+
+
 
 We identify the following threats as high priority:
 ### Threat: Elevation Using Impersonation
