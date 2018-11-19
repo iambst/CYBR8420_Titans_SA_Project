@@ -68,6 +68,11 @@ Interestingly Nextcloud uses HackerOne program where hackers can report vulnerab
 
 [Nextcloud HackerOne Program](https://www.hackerone.com/resources/nextcloud-puts-hacker-powered-security-front-and-center)
 
+### Nextcloud Threat Model and Accepted Risks
+
+Nextcloud also published threat model and accepted risks. Following are some of the accepted risks. 
+
+More details can be found at [Nextcloud Security Threat Model](https://nextcloud.com/security/threat-model/)
 
 
 ### Administrator privileges
@@ -86,8 +91,6 @@ Some features in Nextcloud are intentionally marked as insecure and disabled by 
 The audit logging feature in Nextcloud is at the moment missing some logs for things like "Accessing previews of files", these will be added in a future release and known issues are tracked in issue tracker. 
 ### Version disclosure
 Next cloud considers version disclosure an accepted risk as an attacker can enumerate service versions using other means as well. (e.g. comparing behaviour)
-### Attacks involving other Android apps on the device
-Nextcloud considers attacks involving other Android apps on the device as low or medium risk. Stored files can be hidden from other apps if appropriate storage option is selected inside the app. This should be secure, however, if the phone is compromised Nextcloud doesnot guarantee data safety.
 ### Content spoofing
 Next cloud does not consider content spoofing as a bounty-worthy vulnerability.
 ### User enumeration
@@ -99,6 +102,6 @@ Nextcloud ships with multiple features that perform sending requests to other ho
 
 
 
-
+## Project Board
 
 [Trello Project Board](https://trello.com/b/PG39aw1z/sa-project-task-4-threat-modeling)
