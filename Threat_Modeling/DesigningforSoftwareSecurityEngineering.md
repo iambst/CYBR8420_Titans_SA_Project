@@ -60,7 +60,15 @@ Nextcloud offers three simple checks to prevent additional privileges by attacke
 These checks are automatically performed for each request and have to be explicitly turned off by using annotations if necessary. 
 
 
-## Nextcloud accepted risks:
+## Additional Observations
+
+### HackerOne
+
+Interestingly Nextcloud uses HackerOne program where hackers can report vulnerability in Nextcloud. Based on the reported threat risk level, they offer bounty program. Their average vulnerability report response time is less than one hour! 
+
+[Nextcloud HackerOne Program](https://www.hackerone.com/resources/nextcloud-puts-hacker-powered-security-front-and-center)
+
+
 
 ### Administrator privileges
 Nextcloud administrators are ultimately trusted. It is for example expected behavior that a Nextcloud administrator can execute arbitrary code.
