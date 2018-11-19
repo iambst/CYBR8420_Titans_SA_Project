@@ -30,6 +30,18 @@ This audit logs include user session information, file handling, user management
 
 However, at the moment Nextcloud doesnot provide logs for non-critical activities like "Accessing previews of files". It is mentioned that this logs will be added in future releases.
 
+### Information Disclosure
+
+Nextcloud offers multiple layers of encryption for the data. 
+
+First, data is protected when being transferred between clients and servers as well as between servers.  Nextcloud uses standard TLS, a secure communication protocol used by HTTPS. It also warns system administrators strongly if it is not turned on.
+
+Second, data can be encrypted on storage. The Nextcloud Server Side Encryption feature provides secure storage of data by encrypting each file with a unique file key before it is stored. File keys are encrypted, in turn, either by a server wide key  or a per-user key. Server Side Encryption provides protection for data on external storage as the files are encrypted before they are sent to storage. 
+
+Thirdly, Nextcloud offers end-to-end encryption on the client side. The Nextcloud End to End encryption feature is designed such that the server never has access to unencrypted files or keys, nor does server-provided code ever handle unencrypted data which could provide avenues for compromise. Cryptographic Identity Protection in the form of server signed certificates and a Trust On First Use (TOFU) model protects against attackers trying to impersonate other users. 
+
+
+### 
 
 
 We identify the following threats as high priority:
