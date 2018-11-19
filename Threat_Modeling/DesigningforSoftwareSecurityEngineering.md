@@ -6,11 +6,13 @@ Web Browser makes HTTPS request to Nextcloud logic API for customer data. Nextcl
 ![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Level-0.JPG "Level -0")
 
 ### Threat Model Level-1
+The following Level-1 diagram expands the Level-0 diagram further by including details of major processes, related databases and dataflow interactions between them.
+
 [Threat Model Report Level - 1](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Threat_Report_R2.htm)
 
 ## Summary and observations of Threats
 
-We identifies the following threats as high priority:
+We identify the following threats as high priority:
 ### Threat: Elevation Using Impersonation
 ### Mitigation:
 Nextcloud offers three simple checks to prevent additional privileges by attacker or Auth bypass.
