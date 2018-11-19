@@ -1,5 +1,8 @@
 
 ## Threat Model Diagram
+### Threat Model Level-0
+![alt text](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Level-0.JPG "Level -0")
+
 [Threat Model Report Level - 1](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/Threat_Modeling/Threat_Report_R2.htm)
 
 ## Threat Model Analysis
