@@ -22,6 +22,15 @@ Nextcloud has built-in two-factor authentication. It also has mechanisms like Ti
 
 * Nextcloud also uses prepared queries. If App framework is used, it mentions the user to use the syntax to extend mapper class.
 
+### Repudiation
+
+Nextcloud provides a wide range of logging levels from DEBUG, which logs all activity, to FATAL, which logs only fatal errors. Logging level parameters are set in the config/config.php file, or on the Admin page of Nextcloud Web GUI. By default, a log file named nextcloud.log will be created in the directory which has been configured by the datadirectory parameter in config.php. All log information will be sent to default syslog daemon. 
+
+This audit logs include user session information, file handling, user management, sharing and other actions. 
+
+However, at the moment Nextcloud doesnot provide logs for non-critical activities like "Accessing previews of files". It is mentioned that this logs will be added in future releases.
+
+
 
 We identify the following threats as high priority:
 ### Threat: Elevation Using Impersonation
