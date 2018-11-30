@@ -18,3 +18,7 @@ Files from third party entities are shared by Nextcloud server.
 #### Twofactor-backupcodes:
 Nextcloud provides two factor authentication and an in built bruteforce mechanism.<br/>
 We also analyzed code based on our Threat model and misuse cases identified.
+
+## Manual Code Review:
+## Automated Code Review:
+## Summary of Findings:
