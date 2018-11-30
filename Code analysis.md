@@ -84,5 +84,5 @@ To summarize, nextcloud has some code quality issues with the way input is valid
 
 * [CWE-338](https://cwe.mitre.org/data/definitions/338.html) : Use of Cryptographically Weak Pseudo-Random Number Generator
 
-* [CWE-98](https://cwe.mitre.org/data/definitions/98.html) 
+* [CWE-98](https://cwe.mitre.org/data/definitions/98.html) : Improper Control of Filename for Include/Require Statement in PHP Program 
 
