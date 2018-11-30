@@ -50,6 +50,14 @@ private function randomString() {
 		return sha1(uniqid(mt_rand(), true));
 	}
 ```
+```javascript
+		/**
+		 * @When the CSRF token is extracted from the previous response
+		 */
+		public function theCsrfTokenIsExtractedFromThePreviousResponse() {
+			$this->requestToken = substr(preg_replace('/(.*)data-requesttoken="(.*)">(.*)/sm', '\2', $this->response->getBody()->getContents()), 0, 89);
+		}
+```
 
 
 
