@@ -50,6 +50,7 @@ private function randomString() {
 		return sha1(uniqid(mt_rand(), true));
 	}
 ```
+The below code is vulnerable to code injection as it fails to account for dangerous PCRE modification flags in the input string because of usage of preg_replace function.It is harmful when used with user controlled parameters and may facilitate direct attacks against the web server.A function named preg_quote() can be used which will quote any nasty characters in the input string and prevent code injection.
 ```javascript
 /**
 * @When the CSRF token is extracted from the previous response
