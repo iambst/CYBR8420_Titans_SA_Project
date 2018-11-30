@@ -73,7 +73,7 @@ This tool is an automated code security review tool and it looked for issues rel
 
 The Parse scanner is a static scanning tool to review PHP code for potential security-related issues. One primary issue reported is that one function output contents directly and this might lead to a potential injection.Most issues reported by this scanner are Style Checking and Type Checking type of errors and were not very useful. 
 
-[Nextcloud HackerOne Program](https://www.hackerone.com/resources/nextcloud-puts-hacker-powered-security-front-and-center)
+[Link to report](https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/ParseCodeReviewResults.txt)
 
 
 ## Summary of Findings:
