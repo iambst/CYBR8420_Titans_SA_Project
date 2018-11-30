@@ -77,3 +77,5 @@ The Parse scanner is a static scanning tool to review PHP code for potential sec
 
 
 ## Summary of Findings:
+
+To summarize, nextcloud has some code quality issues with the way input is validated. These are commonly reported by all tools though they are not critical for the application. 
