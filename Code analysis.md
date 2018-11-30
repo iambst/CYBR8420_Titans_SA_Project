@@ -20,7 +20,7 @@ Nextcloud provides two factor authentication and an in built bruteforce mechanis
 We also analyzed code based on our Threat model and misuse cases identified.
 
 ## Manual Code Review:
-When we analyzed Filesharing functionality we observed that the data is directly written to screen without any validation or sanitization. It was not clear if the variable is controlled by the user which may lead to potential XSS attack.
+In Filesharing functionality we observed that the data is directly written to screen without any validation or sanitization. It was not clear if the variable is controlled by the user which may lead to potential XSS attack.
 ```javascript
 public function isFieldInResponse($field, $contentExpected){
 		if (count($data->element) > 0){
