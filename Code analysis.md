@@ -90,6 +90,6 @@ To summarize, nextcloud has some code quality issues with the way input is valid
 
 ## Project Board
 
-[Project Board] (https://trello.com/b/bKN8AWRw/sa-project-task-5-code-analysis)
+[Project Board](https://trello.com/b/bKN8AWRw/sa-project-task-5-code-analysis)
 
 
