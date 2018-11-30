@@ -51,11 +51,11 @@ private function randomString() {
 	}
 ```
 ```javascript
-		/**
-		 * @When the CSRF token is extracted from the previous response
-		 */
-		public function theCsrfTokenIsExtractedFromThePreviousResponse() {
-			$this->requestToken = substr(preg_replace('/(.*)data-requesttoken="(.*)">(.*)/sm', '\2', $this->response->getBody()->getContents()), 0, 89);
+/**
+* @When the CSRF token is extracted from the previous response
+*/
+public function theCsrfTokenIsExtractedFromThePreviousResponse() {
+$this->requestToken = substr(preg_replace('/(.*)data-requesttoken="(.*)">(.*)/sm', '\2', $this->response->getBody()->getContents()), 0, 89);
 		}
 ```
 
