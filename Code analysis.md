@@ -69,4 +69,7 @@ The Static Code Analysis is performed using Visual Code Grepper, Parse Security 
 
 This tool is an automated code security review tool and it looked for issues related to bad/insecure code. One primary issue reported by this tool is a File Inclusion Vulnerability where a user-supplied file was included without proper validation. It reported many false positives on potential XSS. 
 
+#### Parse Security Scanner:
+
+
 ## Summary of Findings:
