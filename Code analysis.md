@@ -71,5 +71,6 @@ This tool is an automated code security review tool and it looked for issues rel
 
 #### Parse Security Scanner:
 
+The Parse scanner is a static scanning tool to review PHP code for potential security-related issues. Most issues reported by this scanner are Style Checking and Type Checking type of errors and are not very useful. 
 
 ## Summary of Findings:
