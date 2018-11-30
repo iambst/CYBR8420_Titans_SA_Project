@@ -80,9 +80,9 @@ The Parse scanner is a static scanning tool to review PHP code for potential sec
 
 To summarize, nextcloud has some code quality issues with the way input is validated. These are commonly reported by all tools though they are not critical for the application. Our key findings from the manual and automated code analysis are mapped to the following Common Weaknesses Enumeration. 
 
-* [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
+* [CWE-79](https://cwe.mitre.org/data/definitions/79.html) : Improper Neutralization of Input During Web Page Generation
 
-* [CWE-338](https://cwe.mitre.org/data/definitions/338.html)
+* [CWE-338](https://cwe.mitre.org/data/definitions/338.html) : Use of Cryptographically Weak Pseudo-Random Number Generator
 
-* [CWE-98](https://cwe.mitre.org/data/definitions/98.html)
+* [CWE-98](https://cwe.mitre.org/data/definitions/98.html) 
 
