@@ -86,3 +86,10 @@ To summarize, nextcloud has some code quality issues with the way input is valid
 
 * [CWE-98](https://cwe.mitre.org/data/definitions/98.html) : Improper Control of Filename for Include/Require Statement in PHP Program 
 
+## Contribution Plan
+
+## Project Board
+
+[Project Board] (https://trello.com/b/bKN8AWRw/sa-project-task-5-code-analysis)
+
+
