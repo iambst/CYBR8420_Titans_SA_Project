@@ -43,5 +43,15 @@ public function isFieldInResponse($field, $contentExpected){
 			}
 
 ```
+### Encryption:
+In the Encryption module we found that a code of line uses a pseudo-random number generation that is not cryptographically secure.
+```javascript
+private function randomString() {
+		return sha1(uniqid(mt_rand(), true));
+	}
+```
+
+
+
 ## Automated Code Review:
 ## Summary of Findings:
