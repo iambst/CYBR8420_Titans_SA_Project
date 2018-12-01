@@ -104,6 +104,8 @@ From the above CWE we identified the attack pattern [CAPEC-73](https://capec.mit
 
 ## Contribution Plan
 
+We are planning to place a pull request regarding the data being outputted directly without any validation in the File sharing functionality which could lead to XSS attack.
+
 ## Project Board
 
 [Project Board](https://trello.com/b/bKN8AWRw/sa-project-task-5-code-analysis)
