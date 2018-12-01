@@ -84,15 +84,15 @@ The Parse scanner is a static scanning tool to review PHP code for potential sec
   - Potential XSS attacks.
   - Bugs related to MD5 algorithm being used in the application with regard to Encryption.
 
-The tool reported a File Inclusion Vulnerability which has high risk associated with it. The other issues were related to stylechecks and improper declaration and usage of variables and some unfinished code which could cause low-level issues.
+  The tool reported a File Inclusion Vulnerability which has high risk associated with it. The other issues were related to stylechecks   and improper declaration and usage of variables and some unfinished code which could cause low-level issues.
 
-* We also analyzed code with codacy which reported errors related to Cross-site Request Request Forgery, SQL Injections, XSS attacks which have a medium risk level.
+* We also analyzed code with codacy which reported errors related to Cross-site Request Request Forgery, SQL Injections, XSS attacks       which have a medium risk level.
 
-* The errors reported by Parser Scanner were mostly related to Logical Operators, Hardcoded Sensitive Values, TypeSafe In Array.These are of type Style Checking and are trivial. 
+* The errors reported by Parser Scanner were mostly related to Logical Operators, Hardcoded Sensitive Values, TypeSafe In Array.These     are of type Style Checking and are trivial. 
 
-* In the manual code analysis we could identify a potential XSS attack, an issue with Encryption, we also could find out various instances where the variable is directly outputted leading to possible injections.
+* In the manual code analysis we could identify a potential XSS attack, an issue with Encryption, we also could find out various           instances where the variable is directly outputted leading to possible injections.
 
-To summarize, nextcloud has some code quality issues with the way input is validated. These are commonly reported by all tools though they are not critical for the application. Our key findings from the manual and automated code analysis are mapped to the following Common Weaknesses Enumeration. 
+To summarize, nextcloud has some code quality issues with the way logical operators are handled and input is validated. These are commonly reported by all tools though they are not critical for the application. Our key findings from the manual and automated code analysis are mapped to the following Common Weaknesses Enumeration. 
 
 * [CWE-79](https://cwe.mitre.org/data/definitions/79.html) : Improper Neutralization of Input During Web Page Generation
 
