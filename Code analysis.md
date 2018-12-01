@@ -69,6 +69,8 @@ The Static Code Analysis is performed using Visual Code Grepper, Parse Security 
 
 This tool is an automated code security review tool and it looked for issues related to bad/insecure code. One primary issue reported by this tool is a File Inclusion Vulnerability where a user-supplied file was included without proper validation. It reported many false positives on potential XSS. 
 
+[Link to report](http://htmlpreview.github.com/?https://github.com/iambst/CYBR8420_Titans_SA_Project/blob/master/visualCodeGrepper.html)
+
 #### Parse Security Scanner:
 
 The Parse scanner is a static scanning tool to review PHP code for potential security-related issues. One primary issue reported is that one function output contents directly and this might lead to a potential injection.Most issues reported by this scanner are Style Checking and Type Checking type of errors and were not very useful. 
