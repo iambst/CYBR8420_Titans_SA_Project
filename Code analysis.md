@@ -61,7 +61,7 @@ $this->requestToken = substr(preg_replace('/(.*)data-requesttoken="(.*)">(.*)/sm
 
 
 
-## Automated Code Review:
+## Automated Code Analysis Review:
 
 The Static Code Analysis is performed using Visual Code Grepper, Parse Security Scanner and Codacy. 
 
