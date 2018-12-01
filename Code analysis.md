@@ -78,9 +78,9 @@ The Parse scanner is a static scanning tool to review PHP code for potential sec
 
 ## Summary of Findings:
 By viewing the code issues pointed out by visualcodeGrepper we could majorly categorize them into three categories:
-####Nextcloud server appears to allow the use of an unvalidated variable when executing a command.
-####potential XSS attacks.
-####Bugs related to MD5 algorithm being used in the application with regard to Encryption.
+#### Nextcloud server appears to allow the use of an unvalidated variable when executing a command.
+#### potential XSS attacks.
+#### Bugs related to MD5 algorithm being used in the application with regard to Encryption.
 The other issues were related to stylechecks and improper declaration and usage of variables and some unfinished code which could cause low-level issues.
 On the other side analyzing code with codacy gave us errors related to Cross-site Request Request Forgery, SQL Injections, XSS attacks.
 In the manual code analysis we could identify a potential XSS attack, an issue with Encryption, we also could find out various instances where the variable is directly outputted leading to possible injections.
